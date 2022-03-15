@@ -1,0 +1,184 @@
+<!DOCTYPE html >
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Happy Connecting</title>
+</head>
+
+
+<style>
+body{
+
+	font-family:"Helvetica", cursive;
+	 
+  background:#fea49f;
+	}
+
+/*HEADER SHRINK>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+ 
+/* Create a sticky/fixed navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #101357;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Bg1(Header)*/
+  padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+  font-size:75px
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 15px;
+  color:white;
+  font-family:"Helvetica ";/*>>>>>>>>>>>>>>>>>>>>>>>>>>Handwriting*/
+}
+#navbar-center a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 70px;
+  line-height: 25px;
+  border-radius: 15px;
+  color:#101357;
+  font-family:"Helvetica ";/*>>>>>>>>>>>>>>>>>>>>>>>>>>Handwriting*/
+}
+
+/* Style the logo */
+#navbar #logo {
+  font-size: 70px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+  background-color:white;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HoverLink*/
+  color:#101357;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HoverLinkText*/
+  
+}
+
+#navbar-center a:hover {
+  background-color:00a0a0;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HoverLink*/
+  color:white;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HoverLinkText*/
+  
+}
+/* Style the active/current link */
+#navbar a.active {
+  background-color:#00a0a0;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ActiveLinkColor*/
+  color: white;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ActiveLinkText*/
+}
+
+/* Display some links to the right */
+#navbar-right {
+  float: right;
+}
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 50px 10px !important; /* padding to mke sure no OVERRIDING*/
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+	font-size=300px;
+	
+  }
+  
+  
+  
+  </style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body style="margin-left:0px;margin-right:10px;">
+	<div id="navbar">
+		<font size="400px"><a href="" id="logo">Happy Connecting</a>
+	<div id="navbar-right"style="margin-right:20px">
+		<a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+
+		
+
+		<a href="#"><i class="fa fa-fw fa-user"></i> About Us</a>
+  
+	</div>	
+	</div>
+<br>
+
+<div style="margin-right:200px;margin-left:200px;padding:200px 12px 50px;font-size:22px;text-align: center;color:#800000">
+<p>
+Back in 2 years, we never thought that we'll be forced to stay in our homes, all day everyday. Cook by ourselves, kill time by ourselves, work by ourselves, and not have the basic human interaction. This pandemic has made us realise the value of socialisation, the value of seeking friends, the value of keeping up with our sanity but the problem arises that most of us don't know how to come out of our comfort zones and interact, or sometimes we don't want to bond with people who are already there, people whom we know! That's where our role comes into play, We're here to make it all easy for you, to eradicate all your blues, and fear of socialising And we want you to know, that you're not alone in this, we are all in this together!
+SO, come, let's watch, play, work, and cook together, let's be each other's home away from home.
+
+
+</p>
+
+
+
+
+</div>
+
+<div id="navbar-center">
+<p><center>
+<br>
+		<a class="active" href="Let's%20Jam.htm"><i class="fa fa-music fa-lg" aria-hidden="true"></i>Let's Jam</a>
+<br>
+<br><a class="active" href="What's%20cooking.htm"><i class="fa fa-cutlery" aria-hidden="true"></i> What's Cooking</a>
+<br>
+<br><a class="active" href="World%20Of%20Books.htm"><i class="fa fa-book" aria-hidden="true"></i> World of Books</a>
+<br>
+<br><a class="active" href="Watch%20Party.htm"><i class="fa fa-television" aria-hidden="true"></i>Watch Party</a>
+<br>
+<br><a class="active" href="Work!Work!Work!.htm"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Work!Work!Work!</a>
+<br>
+<br><a class="active" href="Let%20it%20all%20out.htm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Let It All Out!</a>
+<br>
+</center>
+</p>    
+</div>
+
+<div style="margin-right:200px;margin-left:200px;padding:200px 12px 50px;font-size:20px;text-align: center;color:#800000">
+<p>
+----------HAPPY CONNECTING----------
+</p>
+</div>
+   
+  
+
+
+<script>
+
+/*ANIMATION OF HEADER*/
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "50px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
