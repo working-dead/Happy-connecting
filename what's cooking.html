@@ -1,0 +1,174 @@
+<!DOCTYPE html >
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>What's Cooking</title>
+</head>
+
+
+<style>
+body{
+
+	font-family:"Helvetica", cursive;
+	 
+  background:#fea49f;
+	}
+
+/*HEADER SHRINK>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+ 
+/* Create a sticky/fixed navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #101357;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Bg1(Header)*/
+  padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+  font-size:75px
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 15px;
+  color:white;
+  font-family:"Helvetica ";/*>>>>>>>>>>>>>>>>>>>>>>>>>>Handwriting*/
+}
+#navbar-center a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 70px;
+  line-height: 25px;
+  border-radius: 15px;
+  color:white;
+  font-family:"Helvetica ";/*>>>>>>>>>>>>>>>>>>>>>>>>>>Handwriting*/
+}
+
+/* Style the logo */
+#navbar #logo {
+  font-size: 70px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+  background-color:white;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HoverLink*/
+  color:#101357;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HoverLinkText*/
+  
+}
+
+#navbar-center a:hover {
+  background-color:white;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HoverLink*/
+  color:#101357;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HoverLinkText*/
+  
+}
+/* Style the active/current link */
+#navbar a.active {
+  background-color:#00a0a0;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ActiveLinkColor*/
+  color: white;/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ActiveLinkText*/
+}
+
+/* Display some links to the right */
+#navbar-right {
+  float: right;
+}
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 50px 10px !important; /* padding to mke sure no OVERRIDING*/
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+	font-size=300px;
+	
+  }
+  
+  
+  
+  </style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body style="margin-left:0px;margin-right:10px;">
+	<div id="navbar">
+		<font size="400px"><a href="#" id="logo">What's Cooking</a>
+	<div id="navbar-right"style="margin-right:20px">
+		<a href="Index2.htm"><i class="fa fa-fw fa-home"></i> Home</a>
+
+		
+		<a href="#"><i class="fa fa-fw fa-user"></i>About Us</a>
+  
+	</div>	
+	</div>
+<br>
+
+<div style="margin-right:200px;margin-left:200px;padding:200px 12px 50px;font-size:22px;text-align: center;color:#101357">
+<p>
+From trendy delicious recipes, from your kitchen to  juicy gossips from your home, tell us what's cooking,
+if you're new to cooking all by yourself this could feel like safe space to learn or just to have someone along while you cook,
+to kill boredom and the monotonity of life.
+Happy cooking!
+</p>
+
+
+
+
+</div>
+
+<div id="navbar-center">
+<p><center>
+<br>
+		<a href="https://discord.gg/bWzkKHHu"><i class="fa fa-cutlery" aria-hidden="true"></i>Get Started</a>
+<br>
+
+</center>
+</p>    
+</div>
+
+<div style="margin-right:200px;margin-left:200px;padding:200px 12px 50px;font-size:20px;text-align: center;color:#101357">
+<p>
+----------HAPPY CONNECTING----------
+</p>
+</div>
+   
+  
+
+
+<script>
+
+/*ANIMATION OF HEADER*/
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "50px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
